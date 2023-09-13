@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="275dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:layout_margin="2dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:ellipsize="end"
+                android:textStyle="bold"
+                android:id="@+id/mainheading"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:maxLines="2"
+                android:padding="5dp"
+                android:textSize="20sp"
+                android:text="Hello Moto"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="130dp">
+                <TextView
+                    android:text="Hello OnePlus"
+                    android:id="@+id/content"
+                    android:maxLines="6"
+                    android:padding="5dp"
+                    android:textSize="15sp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <ImageView
+                    android:id="@+id/imageview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_launcher_background"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Siva"
+                android:textSize="13sp"
+                android:textStyle="italic"
+                android:id="@+id/author"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Published At"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                android:id="@+id/time"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
